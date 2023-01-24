@@ -4,4 +4,3 @@ resources:
   - ../base/podinfo
 patchesStrategicMerge:
   - podinfo-values.yaml
-  - namespace.yaml
