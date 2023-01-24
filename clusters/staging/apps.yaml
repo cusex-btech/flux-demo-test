@@ -1,13 +1,13 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
-  name: apps
-  namespace: flux-system
+  name: apps-podinfo-stg
+  namespace: flux-system-podinfo-stg
 spec:
   interval: 10m0s
   sourceRef:
     kind: GitRepository
-    name: flux-system
+    name: flux-system-podinfo-stg
   path: ./apps/staging
   prune: true
   wait: true
