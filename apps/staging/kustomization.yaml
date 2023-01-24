@@ -5,3 +5,15 @@ resources:
   - ../base/podinfo
 patchesStrategicMerge:
   - podinfo-values.yaml
+transformers:
+  - |-
+    apiVersion: builtin
+    kind: NamespaceTransformer
+    metadata:
+      name: podinfo-stg
+      namespace: podinfo-stg
+    unsetOnly: true
+    fieldSpecs:
+      - path: metadata/name
+        kind: Namespace
+        create: true
