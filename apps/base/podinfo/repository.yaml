@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
-  name: podinfo-stg
+  name: podinfo
   namespace: podinfo-stg
 spec:
   interval: 5m
