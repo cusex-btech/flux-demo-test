@@ -1,8 +1,8 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: podinfo-prod
-  namespace: podinfo-prod
+  name: podinfo-stg
+  namespace: podinfo-stg
 spec:
   chart:
     spec:
